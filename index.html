@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <base href="/ngconf-2017-embrace-component-tranquility">
   <title>ngconf 2017 slides</title>
-  <link rel="stylesheet" href="/css/reveal.css">
-  <link rel="stylesheet" href="/css/theme/ngconf2017.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/ngconf2017.css">
 
   <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="/lib/css/zenburn.css">
-  <link rel="stylesheet" href="/plugin/highlight.js/styles/atom-one-dark.css">
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="plugin/highlight.js/styles/atom-one-dark.css">
 
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? '/css/print/pdf.css' : '/css/print/paper.css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
     document.getElementsByTagName('head')[0].appendChild(link);
   </script>
 </head>
@@ -25,7 +25,7 @@
 <div class="reveal">
   <div class="slides">
 
-    <section data-external="slides/title.html" data-background-image="/assets/title2.jpg" class="title-slide"></section>
+    <section data-external="slides/title.html" data-background-image="assets/title2.jpg" class="title-slide"></section>
     <section data-external="slides/angular-announcement.html"></section>
     <section data-external="slides/igor-quote.html"></section>
     <section data-external="slides/component-tree.html"></section>
@@ -33,7 +33,7 @@
     <section data-external="slides/component-architects.html" class="component-architects"></section>
     <section data-external="slides/mockup-1.html"></section>
     <section data-external="slides/component-love.html"></section>
-    <section data-external="slides/all-the-things.html" data-background-image="/assets/all-the-things-sm.png" class="all-the-things"></section>
+    <section data-external="slides/all-the-things.html" data-background-image="assets/all-the-things-sm.png" class="all-the-things"></section>
     <section data-external="slides/more-components.html"></section>
     <section class="a-tax-slide">
       <h3><span>Component Tax</span></h3>
@@ -88,8 +88,8 @@
   </div>
 </div>
 
-<script src="/lib/js/head.min.js"></script>
-<script src="/js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
 <script>
   // More info https://github.com/hakimel/reveal.js#configuration
@@ -103,28 +103,28 @@
     // More info https://github.com/hakimel/reveal.js#dependencies
     dependencies: [
       {
-        src: '/plugin/external/external.js',
+        src: 'plugin/external/external.js',
         condition: function () {
           return !!document.querySelector('[data-external]');
         }
       },
       {
-        src: '/plugin/markdown/marked.js',
+        src: 'plugin/markdown/marked.js',
         condition: function() {
           return !!document.querySelector( '[data-markdown]' );
         }
       },
       {
-        src: '/plugin/markdown/markdown.js',
+        src: 'plugin/markdown/markdown.js',
         condition: function() {
           return !!document.querySelector( '[data-markdown]' );
         }
       },
-      {src: '/plugin/notes/notes.js', async: true},
-      { src: '/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      {src: 'plugin/notes/notes.js', async: true},
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
       //{src: 'node_modules/highlight.js/lib/highlight.js'},
       {
-        src: '/plugin/reveal-code-focus/reveal-code-focus.js',
+        src: 'plugin/reveal-code-focus/reveal-code-focus.js',
         async: true,
         callback: function () {
           RevealCodeFocus();
