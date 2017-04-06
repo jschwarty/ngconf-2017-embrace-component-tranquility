@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>ngconf 2017 slides</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/ngconf2017.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="node_modules/highlight.js/styles/atom-one-dark.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <section data-external="slides/title.html" data-background-image="assets/title2.jpg" class="title-slide"></section>
+    <section data-external="slides/angular-announcement.html"></section>
+    <section data-external="slides/igor-quote.html"></section>
+    <section data-external="slides/component-tree.html"></section>
+    <section data-external="slides/component-inspiration.html"></section>
+    <section data-external="slides/component-architects.html" class="component-architects"></section>
+    <section data-external="slides/mockup-1.html"></section>
+    <section data-external="slides/component-love.html"></section>
+    <section data-external="slides/all-the-things.html" data-background-image="assets/all-the-things-sm.png" class="all-the-things"></section>
+    <section data-external="slides/more-components.html"></section>
+    <section class="a-tax-slide">
+      <h3><span>Component Tax</span></h3>
+    </section>
+    <section data-external="slides/angular-platform.html" class="angular-platform"></section>
+    <section data-markdown="slides/component-compiled.md"></section>
+    <section class="a-tax-slide">
+      <h3>The <span>Payload</span> Tax</h3>
+    </section>
+    <section data-external="slides/bootstrap.html" class="bootstrap"></section>
+
+    <section class="a-tax-slide">
+      <h3>The <span>Execution</span> Tax</h3>
+    </section>
+    <section data-external="slides/price-of-admission.html" class="price-of-admission"></section>
+    <section data-external="slides/becoming-component-architects.html" class="becoming-component-architects italic"></section>
+    <section data-markdown="slides/custom-elements.md"></section>
+    <section class="a-tax-slide">
+      <h3>The <span>Container Element</span> Tax</h3>
+    </section>
+    <section data-markdown="slides/code-container-component.md" class="custom-elements"></section>
+    <section data-markdown="slides/component-selectors.html" class="component-selectors"></section>
+    <section data-markdown="slides/component-attribute-selector.md"></section>
+    <section data-markdown="slides/component-selectors-2.html" class="component-selectors-2"></section>
+    <section class="component-composition">
+      <h3>Component &nbsp;Composition</h3>
+      <h4 class="fragment fade-up">The <span class="a-decision">Decision</span> and <span class="a-presentation">Presentation</span> Pattern</h4>
+    </section>
+    <section data-external="slides/decision-presentation.html" class="decision-presentation"></section>
+    <section class="a-tax-slide">
+      <h3>The <span>Tree Coupling</span> Tax</h3>
+    </section>
+    <section data-markdown="slides/list-and-items.md" class="list-and-items"></section>
+    <section data-markdown="slides/md/card.md"></section>
+    <section data-markdown="slides/md/upvote.md"></section>
+    <section data-markdown="slides/md/all-three.md"></section>
+    <section data-markdown="slides/md/list-component.md" class="list-component"></section>
+    <section data-markdown="slides/md/upvote2.md"></section>
+    <section data-markdown="slides/md/service.md"></section>
+    <section data-external="slides/component-tree2.html"></section>
+    <section data-external="slides/redux.html" class="redux"></section>
+    <section class="combo">
+      <h3>Decision/Presentation</h3>
+      <h3>Services</h3>
+      <h3>Observables</h3>
+      <h3>Redux</h3>
+    </section>
+    <section data-external="slides/map.html" class="map-tool"></section>
+    <section data-external="slides/tranquility.html" class="tranquility"></section>
+    <section data-external="slides/end.html" class="component-architects"></section>
+
+  </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+  // More info https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    history: true,
+    controls: false,
+    progress: false,
+    overview: false,
+    help: false,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+      {
+        src: 'plugin/external/external.js',
+        condition: function () {
+          return !!document.querySelector('[data-external]');
+        }
+      },
+      {
+        src: 'plugin/markdown/marked.js',
+        condition: function() {
+          return !!document.querySelector( '[data-markdown]' );
+        }
+      },
+      {
+        src: 'plugin/markdown/markdown.js',
+        condition: function() {
+          return !!document.querySelector( '[data-markdown]' );
+        }
+      },
+      {src: 'plugin/notes/notes.js', async: true},
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      //{src: 'node_modules/highlight.js/lib/highlight.js'},
+      {
+        src: 'node_modules/reveal-code-focus/reveal-code-focus.js',
+        async: true,
+        callback: function () {
+          RevealCodeFocus();
+        }
+      }
+    ]
+  });
+</script>
+</body>
+</html>

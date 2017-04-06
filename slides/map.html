@@ -1,0 +1,135 @@
+<div class="tool">
+  <ul class="agent-list">
+    <li>
+      <span class="coin agent-1"></span>
+      Jules
+    </li>
+    <li>
+      <span class="coin agent-2"></span>
+      Misko
+    </li>
+    <li>
+      <span class="coin agent-3"></span>
+      CrossBeard
+    </li>
+    <li>
+      <span class="coin agent-4"></span>
+      Pete BD
+    </li>
+    <li>
+      <span class="coin agent-5"></span>
+      Hurrikane
+    </li>
+  </ul>
+  <div class="map">
+    <span class="coin agent-1"></span>
+    <span class="coin agent-2"></span>
+    <span class="coin agent-3"></span>
+    <span class="coin agent-4"></span>
+    <span class="coin agent-5"></span>
+  </div>
+</div>
+
+<div class="callouts">
+  <span class="fragment fade-in" data-fragment-index="0">
+    <span class="fragment highlight-box callout-1 fade-out" data-fragment-index="1"></span>
+  </span>
+  <span class="fragment fade-in" data-fragment-index="1">
+    <span class="fragment highlight-box callout-2 fade-out" data-fragment-index="2"></span>
+  </span>
+  <span class="fragment fade-in" data-fragment-index="1">
+    <span class="fragment highlight-box callout-3 fade-out" data-fragment-index="2"></span>
+  </span>
+  <span class="fragment fade-in" data-fragment-index="2">
+    <span class="fragment highlight-box callout-4 fade-out" data-fragment-index="3"></span>
+  </span>
+  <span class="fragment fade-in" data-fragment-index="2">
+    <span class="fragment highlight-box callout-5 fade-out" data-fragment-index="3"></span>
+  </span>
+</div>
+
+<div class="fragment design-panel fade-left highlight-1" data-fragment-index="0">
+  <h3>Page View</h3>
+</div>
+<div class="fragment design-panel fade-left highlight-2" data-fragment-index="1">
+  <h3>Composition of Components</h3>
+</div>
+<div class="fragment design-panel fade-left highlight-3" data-fragment-index="2">
+  <h3>Global Component</h3>
+</div>
+<div class="fragment design-panel fade-left atomic-design" data-fragment-index="3">
+  <h3><span class="atomic">Atomic Design</span> <span class="brad-frost">Brad Frost</span></h3>
+</div>
+<div class="fragment design-panel fade-left attribute-selectors" data-fragment-index="4">
+  <h3>Attribute Selectors</h3>
+  <div data-markdown>
+    <script type="text/template">
+    ```typescript
+    @Component({ selector: '[owAgentList]' })
+
+    @Component({ selector: '[owMap]' })
+    ```
+    ```html
+    <aside owAgentList></aside>
+
+    <article owMap></article>
+    ```
+    </script>
+  </div>
+</div>
+<div class="fragment design-panel fade-left service" data-fragment-index="5">
+  <h3>Service with Observables</h3>
+  <div data-markdown>
+    <script type="text/template">
+      ```typescript
+      class TeamMemberService {
+        get teamMembers(): Observable<Agent> {
+          ...
+        }
+        setTeamMemberLocation(agent, coord): void {
+          ...
+        }
+      }
+      ```
+    </script>
+  </div>
+</div>
+<div class="fragment design-panel fade-left detail-presentation" data-fragment-index="6">
+  <h3>Decision/Presentation</h3>
+  <div data-markdown>
+    <script type="text/template">
+      ```typescript
+      @Component({ selector: '[owAgentList]'
+        template: `
+          <ow-agent *ngFor="let agent of agents"
+           [agent]="agent"></ow-agent>`
+      })
+
+      @Component({ selector: 'ow-agent',
+        template: `
+          <ow-agent-coin></ow-agent-coin>
+          {{agent.name}}`
+      })
+      ```
+    </script>
+  </div>
+</div>
+<div class="fragment design-panel fade-left global-component" data-fragment-index="7">
+  <h3>Global Component</h3>
+  <div data-markdown>
+    <script type="text/template">
+      ```typescript
+      @Component({
+        selector: 'ow-agent-coin',
+        template: `
+          <img [src]="avatar.url"
+           (click)="ping.emit(avatar)">`
+      })
+      class AgentCoinComponent {
+        @Input() avatar;
+        @Output() ping;
+      }
+      ```
+    </script>
+  </div>
+</div>
