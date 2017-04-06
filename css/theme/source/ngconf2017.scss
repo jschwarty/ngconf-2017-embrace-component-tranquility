@@ -307,16 +307,16 @@ code {
         background-size: cover !important;
         margin: 0.7em 0 0.7px 1.6em;
         &.agent-1 {
-          background: url('ngconf-2017-embrace-component-tranquility/assets/juleskremer.jpg');
+          background: url(assets/juleskremer.jpg);
         }
         &.agent-2 {
-          background: url('ngconf-2017-embrace-component-tranquility/assets/misko.jpg');
+          background: url(assets/misko.jpg);
         }
         &.agent-3 {
-          background: url('ngconf-2017-embrace-component-tranquility/assets/jeffcrossbeard.png');
+          background: url(assets/jeffcrossbeard.png);
         }
         &.agent-4 {
-          background: url('ngconf-2017-embrace-component-tranquility/assets/pete.jpg');
+          background: url(assets/pete.jpg);
         }
       }
       .name {
@@ -344,7 +344,7 @@ code {
       border: 4px solid #1f5c95;
       top: -11px;
       position: relative;
-      background: #0bdbf0 url(ngconf-2017-embrace-component-tranquility/assets/Triangle-up-01.svg);
+      background: #0bdbf0 url(assets/Triangle-up-01.svg);
     }
   }
 }
@@ -641,19 +641,19 @@ code {
       position: absolute;
       background-size: cover !important;
       &.agent-1 {
-        background: url('ngconf-2017-embrace-component-tranquility/assets/juleskremer.jpg');
+        background: url(assets/juleskremer.jpg);
       }
       &.agent-2 {
-        background: url('ngconf-2017-embrace-component-tranquility/assets/misko.jpg');
+        background: url(assets/misko.jpg);
       }
       &.agent-3 {
-        background: url('ngconf-2017-embrace-component-tranquility/assets/jeffcrossbeard.png');
+        background: url(assets/jeffcrossbeard.png);
       }
       &.agent-4 {
-        background: url('ngconf-2017-embrace-component-tranquility/assets/pete.jpg');
+        background: url(assets/pete.jpg);
       }
       &.agent-5 {
-        background: url('ngconf-2017-embrace-component-tranquility/assets/tracer.jpg');
+        background: url(assets/tracer.jpg);
       }
     }
     .agent-list {
@@ -678,7 +678,7 @@ code {
     }
     .map {
       border-left: 4px solid #0bdbf0;
-      background: url('ngconf-2017-embrace-component-tranquility/assets/anubis-map.png');
+      background: url(assets/anubis-map.png);
       background-position-x: -14em;
       background-position-y: -2em;
       height: 14em;
