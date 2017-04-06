@@ -307,16 +307,16 @@ code {
         background-size: cover !important;
         margin: 0.7em 0 0.7px 1.6em;
         &.agent-1 {
-          background: url('/assets/juleskremer.jpg');
+          background: url('assets/juleskremer.jpg');
         }
         &.agent-2 {
-          background: url('/assets/misko.jpg');
+          background: url('assets/misko.jpg');
         }
         &.agent-3 {
-          background: url('/assets/jeffcrossbeard.png');
+          background: url('assets/jeffcrossbeard.png');
         }
         &.agent-4 {
-          background: url('/assets/pete.jpg');
+          background: url('assets/pete.jpg');
         }
       }
       .name {
@@ -641,19 +641,19 @@ code {
       position: absolute;
       background-size: cover !important;
       &.agent-1 {
-        background: url('/assets/juleskremer.jpg');
+        background: url('assets/juleskremer.jpg');
       }
       &.agent-2 {
-        background: url('/assets/misko.jpg');
+        background: url('assets/misko.jpg');
       }
       &.agent-3 {
-        background: url('/assets/jeffcrossbeard.png');
+        background: url('assets/jeffcrossbeard.png');
       }
       &.agent-4 {
-        background: url('/assets/pete.jpg');
+        background: url('assets/pete.jpg');
       }
       &.agent-5 {
-        background: url('/assets/tracer.jpg');
+        background: url('assets/tracer.jpg');
       }
     }
     .agent-list {
@@ -678,7 +678,7 @@ code {
     }
     .map {
       border-left: 4px solid #0bdbf0;
-      background: url('/assets/anubis-map.png');
+      background: url('assets/anubis-map.png');
       background-position-x: -14em;
       background-position-y: -2em;
       height: 14em;
